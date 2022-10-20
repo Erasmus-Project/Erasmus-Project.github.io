@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>ERASMUS: Romania</title>
+	<link rel="icon" href="../img/Flags/ROU.png" type="image/x-icon" />
+	<link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+	<main>
+		<header>
+			<div class="logo">HEMS Recipes
+				<pre>  </pre>
+				<img src="../img/Flags/Erasmus.png" width="216" height="75" />
+				<h1>
+					<ul id="ulR">
+						<pre><a href="About.html">About</a> <a href="Contact.html">Contact</a></pre>
+					</ul>
+				</h1>
+			</div>
+
+			<h1>
+				<ul>
+					<a href="../index.html">Germany</a>
+					<a href="Turkey.html">Turkey</a>
+					<a class="active">Romania</a>
+					<a href="Poland.html">Poland</a>
+					<a href="Spain.html">Spain</a>
+				</ul>
+			</h1>
+		</header>
+
+		<section>
+			<header>
+				<div class="logo">
+					<img src="../img/Flags/Erasmus.png" width="216" height="75" />
+					<pre>  </pre>
+					The most exquisite german culinary experiences,<br />
+					brought to you by Heinrich-Emanuel-Merck-Schule
+				</div>
+			</header>
+		</section>
+
+		<div class="row">
+			<section id="sectionL">Click on a picture to see the instructions!<br /><br />
+				<article style="height: 98.1%">
+
+					<footer>Recipes</footer><br /><br />
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="N/A" onclick="image(event)" width="100%" /><br />
+					</div><br />
+
+					Ingredients<br /><br />
+					<table>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td>EMPTY</td>
+							<td> - EX - </td>
+						</tr>
+					</table><br /><br /><br />
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Example Text" onclick="image(event)"
+							width="100%" /><br />
+					</div><br />
+
+					Ingredients<br /><br />
+					<table>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td>Lorem</td>
+							<td>Ipsum</td>
+						</tr>
+					</table><br /><br /><br />
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Lorem Ipsum" onclick="image(event)"
+							width="100%" /><br />
+					</div><br />
+
+					Ingredients<br /><br />
+					<table>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</table><br /><br /><br />
+				</article>
+			</section>
+
+
+			<section id="sectionR"><br /><br />
+				<article style="height: 98.1%">
+
+					<footer>Tips</footer><br /><br />
+					Regional Markets:<br /><br />
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Lorem Ipsum" onclick="image(event)"
+							width="100%" /><br />
+					</div>
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Lorem Ipsum" onclick="image(event)"
+							width="100%" /><br />
+					</div>
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Lorem Ipsum" onclick="image(event)"
+							width="100%" /><br />
+					</div><br />
+
+					Local Restaurants (Darmstadt):<br /><br />
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Lorem Ipsum" onclick="image(event)"
+							width="100%" /><br />
+					</div>
+
+					<div class="polaroid">
+						<img class="myImg" src="../img/ROU/NULL.jpg" alt="Lorem Ipsum" onclick="image(event)"
+							width="100%" /><br />
+					</div>
+				</article>
+			</section>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01" />
+			<div id="caption"></div>
+		</div>
+		<script>
+			var modal = document.getElementById("myModal");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			function image(event) {
+				modal.style.display = "block";
+				modalImg.src = event.target.src;
+				captionText.innerHTML = event.target.alt;
+			}
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function () {
+				modal.style.display = "none";
+			};
+		</script>
+
+		<footer><br />
+			<a href="html/Contact.html">Contact</a>
+			<br />
+			<br />
+			© 2022 by Kaan Potcu
+		</footer>
+	</main>
+</body>
+
+</html>
